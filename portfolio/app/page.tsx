@@ -924,7 +924,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <Link href="/" className="text-xl font-bold">
-                dev<span className="text-red-500">.</span>portfolio
+                ehtisham<span className="text-red-500">.</span>dev
               </Link>
             </div>
             <div className="text-sm text-white/50">
