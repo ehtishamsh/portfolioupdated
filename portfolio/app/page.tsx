@@ -321,7 +321,7 @@ export default function Home() {
                     className="flex gap-4"
                   >
                     <Link
-                      href="https://github.com"
+                      href="https://github.com/ehtishamsh"
                       target="_blank"
                       className="text-white/70 hover:text-white transition-colors"
                     >
