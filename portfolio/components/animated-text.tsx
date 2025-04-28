@@ -1,17 +1,20 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import type { ReactNode } from "react"
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 interface AnimatedTextProps {
-  text: string | ReactNode
-  className?: string
-  once?: boolean
+  text: string | ReactNode;
+  className?: string;
+  once?: boolean;
 }
 
-export default function AnimatedText({ text, className = "", once = true }: AnimatedTextProps) {
+export default function AnimatedText({
+  text,
+  className = "",
+}: AnimatedTextProps) {
   // For string text, split it into an array of letters
-  const words = typeof text === "string" ? text.split(" ") : [text]
+  const words = typeof text === "string" ? text.split(" ") : [text];
 
   // Variants for container of words
   const container = {
@@ -20,7 +23,7 @@ export default function AnimatedText({ text, className = "", once = true }: Anim
       opacity: 1,
       transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
     }),
-  }
+  };
 
   // Variants for each word
   const child = {
@@ -42,7 +45,7 @@ export default function AnimatedText({ text, className = "", once = true }: Anim
         stiffness: 100,
       },
     },
-  }
+  };
 
   return (
     <motion.div
@@ -53,10 +56,14 @@ export default function AnimatedText({ text, className = "", once = true }: Anim
       className={className}
     >
       {words.map((word, index) => (
-        <motion.span variants={child} style={{ marginRight: "0.25em" }} key={index}>
+        <motion.span
+          variants={child}
+          style={{ marginRight: "0.25em" }}
+          key={index}
+        >
           {word}
         </motion.span>
       ))}
     </motion.div>
-  )
+  );
 }

@@ -10,7 +10,6 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import {
-  Heart,
   ArrowRight,
   Github,
   Linkedin,
@@ -288,7 +287,7 @@ export default function Home() {
                     transition={{ duration: 0.6 }}
                     className="text-6xl font-bold"
                   >
-                    Hello, I'm Ehtisham Shah 👋
+                    Hello, I{"’"}m Ehtisham Shah 👋
                   </motion.h1>
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -401,18 +400,20 @@ export default function Home() {
             </h2>
             <div className="h-1 w-16 bg-red-500 mb-8"></div>
             <p className="text-white/70 mb-6 text-lg">
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js, Next.js &amp; Node.js). I am very
-              enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.
+              I{"’"}m a passionate, self-proclaimed designer who specializes in
+              full stack development (React.js, Next.js &amp; Node.js). I am
+              very enthusiastic about bringing the technical and visual aspects
+              of digital products to life. User experience, pixel perfect
+              design, and writing clear, readable, highly performant code
+              matters to me.
             </p>
             <p className="text-white/70 mb-8 text-lg">
-              I began my journey as a web developer in 2022, and since then,
-              I've continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way. I'm
-              building cutting-edge web applications using modern technologies
-              such as react.js,Next.js, TypeScript, Tailwindcss and much more.
+              I began my journey as a web developer in 2022, and since then, I
+              {"’"}ve continued to grow and evolve as a developer, taking on new
+              challenges and learning the latest technologies along the way. I
+              {"’"}m building cutting-edge web applications using modern
+              technologies such as react.js,Next.js, TypeScript, Tailwindcss and
+              much more.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white/5 p-6 rounded-xl border border-white/10">
@@ -481,8 +482,8 @@ export default function Home() {
             </h2>
             <div className="h-1 w-16 bg-red-500 mb-8"></div>
             <p className="text-white/70">
-              These are the technologies and tools I've mastered throughout my
-              journey as a developer.
+              These are the technologies and tools I{"’"}ve mastered throughout
+              my journey as a developer.
             </p>
           </motion.div>
 
@@ -674,8 +675,8 @@ export default function Home() {
             </h2>
             <div className="h-1 w-16 bg-red-500 mb-8"></div>
             <p className="text-white/70">
-              Here are the companies I've worked with throughout my professional
-              journey.
+              Here are the companies I{"’"}ve worked with throughout my
+              professional journey.
             </p>
           </motion.div>
 
@@ -790,8 +791,8 @@ export default function Home() {
             </h2>
             <div className="h-1 w-16 bg-red-500 mb-8"></div>
             <p className="text-white/70">
-              Have a project in mind? Let's discuss how I can help bring your
-              ideas to life.
+              Have a project in mind? Let{"'"}s discuss how I can help bring
+              your ideas to life.
             </p>
           </motion.div>
 
